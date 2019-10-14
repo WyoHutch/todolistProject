@@ -10,7 +10,7 @@ class TodoItem extends React.Component {
   }
 
   toggleDone = () => {
-    fetch(`http://localhost:5000/todo/${this.props.id}`, {
+    fetch(`https://enigmatic-earth-83722.herokuapp.com/todo/${this.props.id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
@@ -36,14 +36,3 @@ class TodoItem extends React.Component {
 }
 
 export default TodoItem;
-
-const Counter = () => {
-  const [count, setCount = React.useState(1)]
-}
-
-return (
-  <div>
-    <button onClick={() => setCount(count + 1)}>Add</button>
-    <button onClick={() => setCount(count - 1)}>Sub</button>
-  </div>
-)
