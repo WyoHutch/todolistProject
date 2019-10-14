@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.App {
+  background-color: gray;
+  text-align: center;
+}
+
+#headspace {
+  margin: 50px;
+}
+
+.todoitems {
+  display: flex;
+  align-items: center;
+  color: black;
+  margin: 1px;
+  padding: 1px;
+}
+
+.done {
+  color: rgb(107, 105, 105);
+  text-decoration: line-through;
+}
